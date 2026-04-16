@@ -1,0 +1,29 @@
+[project]
+name = "clues"
+version = "0.1.0"
+description = "CLUES: Conditional Language Uncertainty via Entropy and Schur complement"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Angelo Ziletti" },
+    { name = "Leonardo D'Ambrosi" },
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "networkx>=3.0",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "pydantic>=2.0",
+    "google-genai>=1.0",
+    "python-dotenv>=1.0",
+    "nest-asyncio>=1.5",
+]
+
+[project.optional-dependencies]
+dev = ["jupyter", "ipykernel"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
